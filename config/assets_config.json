@@ -1,0 +1,7 @@
+{
+  "crypto_assets": {
+    "large_cap": ["BTC/USD", "ETH/USD", "BNB/USD"],
+    "mid_cap": ["ADA/USD", "DOT/USD", "LINK/USD", "LTC/USD"],
+    "small_cap": ["MATIC/USD", "ATOM/USD", "XLM/USD"]
+  }
+}

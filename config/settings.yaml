@@ -1,0 +1,21 @@
+# Data Collection Settings
+data:
+  exchanges: ["kraken"]
+  timeframe: "1h"
+  historical_days: 365
+  assets: ["BTC/USD", "ETH/USD", "ADA/USD", "DOT/USD", "LINK/USD"]
+  min_daily_volume: 1000000
+
+# GARCH Modeling Parameters  
+models:
+  garch:
+    p: 1
+    q: 1
+    distributions: ["normal", "studentst", "skewstudent"]
+  test_size: 0.2  # Holdout for forecasting evaluation
+
+# Results & Visualization
+output:
+  save_plots: true
+  plot_style: "seaborn-v0_8-whitegrid"
+  dpi: 300
