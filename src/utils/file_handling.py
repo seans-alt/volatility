@@ -81,7 +81,11 @@ class FileManager:
         current_path = self.base_path / "results" / self.current_date
         
         if latest_path.exists():
-            latest_path.unlink()
+            if latest_path.is_symlink() or latest_path.is_file():
+                latest_path.unlink()
+            elif latest_path.is_dir():
+                import shutil
+                shutil.rmtree(latest_path)
         
         # Create relative symlink
         latest_path.symlink_to(current_path.relative_to(latest_path.parent))

@@ -1,0 +1,6 @@
+,aic,aic,aic,log_likelihood,log_likelihood,persistence,persistence
+,count,mean,std,mean,std,mean,std
+model,,,,,,,
+EGARCH,5,1036.52,526.35,-514.26,263.18,,
+GARCH,5,1041.7,521.79,-516.85,260.89,,
+GJR-GARCH,5,1040.17,520.1,-515.08,260.05,,
